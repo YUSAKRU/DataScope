@@ -1,0 +1,62 @@
+# İKA-VMS v2.0 - Docker Compose Configuration
+#
+# Usage:
+#   docker compose run --rm ika-vms --hashtag iklim --limit 50
+#   docker compose run --rm ika-vms --test-mode --hashtag test
+#
+# Build:
+#   docker compose build
+#
+
+services:
+  datascope:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datascope
+    
+    # Mount volumes for data persistence
+    volumes:
+      # Output files (reports, visualizations, data)
+      - ./outputs:/app/outputs
+      
+      # Data storage
+      - ./data:/app/data
+      
+      # Log files
+      - ./logs:/app/logs
+      
+      # Google Cloud credentials (read-only)
+      - ./credentials:/app/credentials:ro
+    
+    # Environment variables
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/credentials/key.json
+      - MASTODON_INSTANCE=${MASTODON_INSTANCE:-https://mastodon.social}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - OUTPUT_DIR=/app/outputs
+      - DATA_DIR=/app/data
+      - LOG_DIR=/app/logs
+    
+    # Port mapping for Streamlit
+    ports:
+      - "8501:8501"
+    
+    # Network settings
+    networks:
+      - ika-network
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+networks:
+  ika-network:
+    driver: bridge
+
