@@ -8,7 +8,7 @@
 ![Mastodon](https://img.shields.io/badge/Mastodon-API-purple?style=flat-square&logo=mastodon)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=flat-square&logo=docker)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=flat-square&logo=streamlit)
-![License](https://img.shields.io/badge/License-GPLv3-red?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 **A modular data mining pipeline and interactive web dashboard that scrapes social media data from Mastodon, cleanses and normalizes text, performs sentiment analysis using Google Cloud NLP, and generates visual reports.**
 
@@ -151,6 +151,12 @@ All generated files are saved under the output directory (default: `outputs/`):
 - 📝 `logs/ika-vms.log` : Application logs.
 
 ---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
 ---
 
 # 📊 DataScope v2.0 - Sosyal Medya Veri Madenciliği ve Duygu Analizi Platformu
@@ -210,4 +216,4 @@ All generated files are saved under the output directory (default: `outputs/`):
 
 ## 📄 Lisans
 
-Bu proje **GNU General Public License v3.0** (GPLv3) altında lisanslanmıştır. Detaylar için sistem dökümanlarına göz atabilirsiniz.
+Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
