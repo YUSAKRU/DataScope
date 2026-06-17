@@ -1,7 +1,7 @@
 """
-DataScope v2.0 - İklim Kanunu Algı Analizi ve Veri Madenciliği Sistemi
+DataScope v2.0 - Sosyal Medya Veri Madenciliği ve Duygu Analizi Platformu
 
-A Python application for collecting climate-related social media data
+A Python application for collecting social media data
 from Mastodon, performing sentiment analysis, and generating reports.
 
 Modules:
@@ -14,6 +14,6 @@ Modules:
 
 __version__ = "2.0.0"
 __author__ = "DataScope Team"
-__description__ = "İklim Kanunu Algı Analizi ve Veri Madenciliği Sistemi"
+__description__ = "Sosyal Medya Veri Madenciliği ve Duygu Analizi Platformu"
 
 

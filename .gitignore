@@ -81,6 +81,7 @@ Thumbs.db
 # Project specific
 data/
 outputs/
+outputs_streamlit/
 logs/
 credentials/*.json
 *.log

@@ -15,7 +15,7 @@
 
 ### 1.1 Amaç
 
-Bu doküman, İklim Kanunu Algı Analizi ve Veri Madenciliği Sistemi'nin (DataScope) v2.0 sürümünün teknik tasarımını tanımlar.
+Bu doküman, Sosyal Medya Veri Madenciliği ve Duygu Analizi Platformu'nun (DataScope) v2.0 sürümünün teknik tasarımını tanımlar.
 
 ### 1.2 Kapsam
 
